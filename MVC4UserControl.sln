@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC4UserControl", "MVC4UserControl\MVC4UserControl.csproj", "{545E759B-20CF-470B-A183-B8DECAF2301F}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database2", "Database2\Database2.sqlproj", "{4AC7AC8F-4E9E-480B-805F-799B57CFF5DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{545E759B-20CF-470B-A183-B8DECAF2301F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{545E759B-20CF-470B-A183-B8DECAF2301F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{545E759B-20CF-470B-A183-B8DECAF2301F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{545E759B-20CF-470B-A183-B8DECAF2301F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AC7AC8F-4E9E-480B-805F-799B57CFF5DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AC7AC8F-4E9E-480B-805F-799B57CFF5DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AC7AC8F-4E9E-480B-805F-799B57CFF5DE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4AC7AC8F-4E9E-480B-805F-799B57CFF5DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AC7AC8F-4E9E-480B-805F-799B57CFF5DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AC7AC8F-4E9E-480B-805F-799B57CFF5DE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
