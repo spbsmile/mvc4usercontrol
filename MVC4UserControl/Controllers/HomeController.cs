@@ -1,4 +1,6 @@
-﻿using System.Web.Mvc;
+﻿using System.Linq;
+using System.Web.Mvc;
+using MVC4UserControl.Models;
 
 namespace MVC4UserControl.Controllers
 {
@@ -6,11 +8,22 @@ namespace MVC4UserControl.Controllers
     {
         //
         // GET: /Home/
-        
+        private EmployeeContext db = new EmployeeContext();
+
+
         public ActionResult Index()
         {
-            return View("View1");
+            var model = new TableEmployeeEntities1();
+            var list = model.TableEmployees.ToList();
+            return View(list);
         }
 
+        public ActionResult Details(int id)
+        {
+            var model = new TableEmployeeEntities1();
+            var targetEmployee = model.TableEmployees.Single(x => x.Id == id);
+
+            return View(targetEmployee);
+        }
     }
 }
