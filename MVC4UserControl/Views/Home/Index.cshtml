@@ -15,32 +15,24 @@
     <div class="row">
         <div class="col-md-12">
             <h4></h4>
-            <div>Пользователи <span class="icon_add_user" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus fa-5" aria-hidden="true"></i></span></div>
+            <div><span class="table_title">Пользователи</span> <span class="icon_add_user" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i></span></div>
 
             <div> </div>
-            <!-- <div class="table-responsive">-->
-            <table id="mytable" class="table table-bordred">
+            <table id="mytable" class="table table-bordered tableEmployee">
                 <thead>
                 <th>Фамилия</th>
                 <th>Имя</th>
                 <th>Отчество</th>
-                <th>Email</th>
+                <th>E-mail</th>
                 </thead>
                 <tbody>
                 <tr>
                     <td>Mohsin</td>
                     <td>Irshad</td>
                     <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
-                    <td>isometric.mohsin@gmail.com</td>
-                    <td>
-                        <p data-placement="top" data-toggle="tooltip" title="Edit">
+                    <td>isometric.mohsin@gmail.com
                             <button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-pencil"></span></button>
-                        </p>
-                    </td>
-                    <td>
-                        <p data-placement="top" data-toggle="tooltip" title="Delete">
                             <button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete"><span class="glyphicon glyphicon-trash"></span></button>
-                        </p>
                     </td>
                 </tr>
                 </tbody>
@@ -51,7 +43,7 @@
     </div>
 </div>
 
-<table class="table table-bordred">
+@*<table class="table table-bordred">
     @foreach (var item in Model)
     {
         <tr>
@@ -63,7 +55,7 @@
             </td>
         </tr>
     }
-</table>
+</table>*@
 
 <!-- Modal window add user -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -76,28 +68,28 @@
             <div class="modal-body">
                 <form>
                     <div class="form-group">
-                        <label for="last-name">
-                             Фамилия <i class="fa fa-asterisk" aria-hidden="true"></i>
+                        <label class="label_form_add_user" for="last-name">
+                             Фамилия <i class="glyphicon glyphicon-star icon_star" aria-hidden="true"></i>
                         </label>
                         <input class="form-control" id="last-name" required type="text" />
                     </div>
                     <div class="form-group">
-                        <label for="first-name">
-                            Имя <i class="fa fa-asterisk" aria-hidden="true"></i>
+                        <label class="label_form_add_user" for="first-name">
+                            Имя <i class="glyphicon glyphicon-star icon_star" aria-hidden="true"></i>
                         </label>
                         <input class="form-control" id="first-name" type="text" required />
                     </div>
                     <div class="form-group">
-                        <label for="third-name">
-                            Отчество <i class="fa fa-asterisk" aria-hidden="true"></i>
+                        <label class="label_form_add_user" for="third-name">
+                            Отчество
                         </label>
-                        <input class="form-control" id="third-name" type="text" required />
+                        <input class="form-control" id="third-name" type="text" />
                     </div>
                     <div class="form-group">
-                        <label for="email">
-                            E-mail <i class="fa fa-asterisk" aria-hidden="true"></i>
+                        <label class="label_form_add_user" for="email">
+                            E-mail
                         </label>
-                        <input class="form-control" id="email" type="email" required />
+                        <input class="form-control" id="email" type="email" />
                     </div>
                 </form>
             </div>
